@@ -10,7 +10,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <a href="{% url 'detail' album.id %}">
-                            <img src="{{ album.album_logo }}" class="img-responsive">
+                            <img src="{{ album.album_logo.url }}" class="img-responsive">
                         </a>
                         <h1>{{ album.album_title }} <small>{{ album.genre }}</small></h1>
                         <h2>{{ album.artist }}</h2>
